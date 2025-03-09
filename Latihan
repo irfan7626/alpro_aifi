@@ -1,0 +1,13 @@
+import random
+
+tebak_komputer = random.randint(0, 100)
+tebak_user = int(input("Pilih angka dari 0 sampai 100: "))
+
+# Menghitung selisih antara angka komputer dan angka tebakan user
+selisih = abs(tebak_komputer - tebak_user)
+
+# Menampilkan hasil tebakan dan skor
+print(f"Angka yang di-generate komputer: {tebak_komputer}")
+print(f"Angka tebakan Anda: {tebak_user}")
+print(f"Selisih: {selisih}")
+print(f"Skor tebakan Anda: {100 - selisih}")
